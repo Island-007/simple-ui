@@ -1,0 +1,70 @@
+:root {
+  --simple-button-radius: 4px;
+  --simple-button-default-border-color: #606266;
+}
+
+.sim-button {
+  display: inline-block;
+  line-height: 1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px 20px;
+  background-color: var(--simple-color-white);
+  color: var(--simple-color-black);
+  border: 1px solid var(--simple-button-default-border-color);
+  border-radius: var(--simple-button-radius);
+  font-size: var(--simple-font-size);
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+
+  &.is-disabled {
+    cursor: not-allowed;
+  }
+
+  &.is-round {
+    border-radius: 40px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--primary {
+    background-color: var(--simple-color-primary);
+    border-color: var(--simple-color-primary);
+    color: var(--simple-color-white);
+  }
+
+  &--warning {
+    background-color: var(--simple-color-warning);
+    border-color: var(--simple-color-warning);
+    color: var(--simple-color-white);
+  }
+
+  &--danger {
+    background-color: var(--simple-color-danger);
+    border-color: var(--simple-color-danger);
+    color: var(--simple-color-white);
+  }
+
+  &--info {
+    background-color: var(--simple-color-info);
+    border-color: var(--simple-color-info);
+    color: var(--simple-color-white);
+  }
+
+  &--text {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--simple-color-primary);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  & + .sim-button {
+    margin-left: 10px;
+  }
+}
