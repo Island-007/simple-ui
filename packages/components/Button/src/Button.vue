@@ -1,7 +1,7 @@
 <!--
  * @Author: zhangpeiwen
  * @Date: 2023-06-26 10:37:30
- * @LastEditTime: 2023-06-30 17:57:25
+ * @LastEditTime: 2023-07-05 18:30:10
  * @LastEditors: zhangpeiwen
  * @Description: 
  * @FilePath: \simple-ui\packages\components\Button\src\button.vue
@@ -27,7 +27,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import Ripple from '../Ripple/index.js'
+import Ripple from '../../Ripple/index.js'
 export default defineComponent({
   name: 'SimButton',
   props: {
